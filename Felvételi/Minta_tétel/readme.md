@@ -181,10 +181,10 @@ Mit ír ki a program, ha n-be az 5 értéket, majd az x változóba sorra az 139
 **b.** három egész számot (-999..999 tartományból) és kiírja ezeket növekvő sorrendben a képernyőre; **(0.5 pont)**
 **c.** egy n (1<=n<=999) értéket, majd n darab egész számot (-999..999 tartományból), és kiírja a képernyőre a növekvő sorrendbe rendezett számsorozatot. **(1 pont)**
 6. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely
-**a.** billentyűzetről beolvas két egész számot (-999..999 tartományból) és kiírja a képernyőre a kisebbiket; **(0.25 pont)**
-**b.** billentyűzetről beolvas három egész számot (-999..999 tartományból) és kiírja a képernyőre a legnagyobbikat; **(0.5 pont)**
-**c.** állományból beolvas egy n (1<=n<=999) értéket, majd n darab egész számot (-999..999 tartományból), és kiírja a képernyőre a legkisebb és legnagyobb értékek első előfordulási helyeinek sorszámát; **(0.75 pont)**
-**d.** állományból beolvassa az n (1<=n<=10) és m (1<=m<=10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja a képernyőre a páratlan sorszámú sorok elemeinek minimum értékét, a páros sorszámú sorok elemeinek pedig a maximum értékét. Adott sor minimumát/maximumát egy-egy függvénnyel határozd meg. **(1 pont)**
+    **a.** billentyűzetről beolvas két egész számot (-999..999 tartományból) és kiírja a képernyőre a kisebbiket; **(0.25 pont)**
+    **b.** billentyűzetről beolvas három egész számot (-999..999 tartományból) és kiírja a képernyőre a legnagyobbikat; **(0.5 pont)**
+    **c.** állományból beolvas egy n (1<=n<=999) értéket, majd n darab egész számot (-999..999 tartományból), és kiírja a képernyőre a legkisebb és legnagyobb értékek első előfordulási helyeinek sorszámát; **(0.75 pont)**
+    **d.** állományból beolvassa az n (1<=n<=10) és m (1<=m<=10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja a képernyőre a páratlan sorszámú sorok elemeinek minimum értékét, a páros sorszámú sorok elemeinek pedig a maximum értékét. Adott sor minimumát/maximumát egy-egy függvénnyel határozd meg. **(1 pont)**
 7. **(maximum 1 pont)** Képzelj el n várost, amelyeket az 1,2,…,n természetes számok azonosítanak (bármely két város között van közvetlen út). Egy bementi állományban adott az n (1<=n<=10) érték és egy nxn méretű természetes számokat (1..999 tartományból) tartalmazó mátrix. A mátrix (i,j) pozíciójú eleme azt ábrázolja, hogy mekkora a közvetlen távolság az i és j városok között. Írj Pascal vagy C/C++ programot, amely meghatározza (és kiírja a képernyőre) egy utazókereskedő útvonalának a hosszát, aki az alábbi algoritmus szerint járja be a városokat (minden várost pontosan egyszer érintve):
     - indul az 1-es városból
     - minden lépésben a kurrens városhoz legközelebbi, még meg nem látogatott városba megy
