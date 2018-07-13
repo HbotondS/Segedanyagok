@@ -1,6 +1,6 @@
 # Felvételi Tematika - Informatika
 ## Fejezetek:
- 1. Természetes számok feldolgozása számjegyenként.
+ 1. [Természetes számok feldolgozása számjegyenként.] (#1-természetes-számok-feldolgozása-számjegyenként)
  2. Számsorozatok feldolgozása elemenként. Egydimenziós tömbök.
  3.  Mátrixok feldolgozása elemenként/soronként/oszloponként. Kétdimenziós tömbök.
  4. Egymásba ágyazott ciklusszerkezetek használatát feltételező algoritmusok.
