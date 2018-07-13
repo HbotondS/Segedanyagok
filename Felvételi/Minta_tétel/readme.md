@@ -1,12 +1,12 @@
 # Felvételi Tematika - Informatika
 ## Fejezetek:
  1. [Természetes számok feldolgozása számjegyenként.](#1-természetes-számok-feldolgozása-számjegyenként)
- 2. Számsorozatok feldolgozása elemenként. Egydimenziós tömbök.
- 3.  Mátrixok feldolgozása elemenként/soronként/oszloponként. Kétdimenziós tömbök.
- 4. Egymásba ágyazott ciklusszerkezetek használatát feltételező algoritmusok.
- 5. Iteratív alprogramok (eljárások/függvények).
- 6. Elemi algoritmusok, és ezek alkalmazásai: keresés (lineáris/bináris), rendezés, prím-teszt, lnko, lkkt, stb.
- 7. További egyszerű algoritmusok.
+ 2. [Számsorozatok feldolgozása elemenként. Egydimenziós tömbök.](#2-számsorozatok-feldolgozása-elemenként-egydimenziós-tömbök)
+ 3. [Mátrixok feldolgozása elemenként/soronként/oszloponként. Kétdimenziós tömbök.](#3-mátrixok-feldolgozása-elemenkéntsoronkéntoszloponként-kétdimenziós-tömbök)
+ 4. [Egymásba ágyazott ciklusszerkezetek használatát feltételező algoritmusok.](#4-egymásba-ágyazott-ciklusszerkezetek-használatát-feltételező-algoritmusok)
+ 5. [Iteratív alprogramok (eljárások/függvények).](#5-iteratív-alprogramok-eljárásokfüggvények)
+ 6. [Elemi algoritmusok, és ezek alkalmazásai: keresés (lineáris/bináris), rendezés, prím-teszt, lnko, lkkt, stb.](#6-elemi-algoritmusok-és-ezek-alkalmazásai)
+ 7. [További egyszerű algoritmusok.](#7-további-egyszerű-algoritmusok)
 ---
 ### Példák **elméleti** tételre a fentebb megadott tematikából:
  - ALPROGRAMOK (Pascal vagy C/C++): definíció/deklaráció; formális és aktuális/effektív paraméterek; érték/cím-szerinti paraméterátadás, stb. Adj példákat!
