@@ -167,15 +167,15 @@ Mit ír ki a program, ha n-be az 5 értéket, majd az x változóba sorra az 139
  kiír s
 ````
 3. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre
-**a.** a beolvasott számot, a 10-zel való osztási hányadosát, és a 10-zel való osztási maradékát; **(0.25 pont)**
-**b.** a beolvasott szám utolsó számjegyét; **(0.5 pont)**
-**c.** a beolvasott szám első számjegyét. **(0.75 pont)**
-**d.** a beolvasott szám számjegy-előfordulási statisztikáját. **(1 pont)**
+    1. a beolvasott számot, a 10-zel való osztási hányadosát, és a 10-zel való osztási maradékát; **(0.25 pont)**
+    2. a beolvasott szám utolsó számjegyét; **(0.5 pont)**
+    3. a beolvasott szám első számjegyét. **(0.75 pont)**
+    4. a beolvasott szám számjegy-előfordulási statisztikáját. **(1 pont)**
 4. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely beolvas a billentyűzetről egy n (1<=n<=999) értéket, és kiírja a képernyőre
-**a.** az 1, 2, 3, 4, . . ., n számsorozatot; **(0.25 pont)**
-**b.** az n-1, n-2, . . ., 2, 1, 0 számsorozatot; **(0.5 pont)**
-**c.** az 0, 1, 1, 2, 3, 5, 8, . . .számsorozat első n elemét (a következő az előző kettő összege); (Például, n=6-ra a 0, 1, 1, 2, 3, 5 számsorozat kell, hogy megjelenjen a képernyőn) **(0.75 pont)**
-**d.** az 1, 1, 2, 1, 2, 3, 1, 2, 3, 4, . . . számsorozat első n elemét. (Például, n=5-re az 1, 1, 2, 1, 2 számsorozat kell, hogy megjelenjen a képernyőn) **(1 pont)**
+    1. az 1, 2, 3, 4, . . ., n számsorozatot; **(0.25 pont)**
+    2. az n-1, n-2, . . ., 2, 1, 0 számsorozatot; **(0.5 pont)**
+    3. az 0, 1, 1, 2, 3, 5, 8, . . .számsorozat első n elemét (a következő az előző kettő összege); (Például, n=6-ra a 0, 1, 1, 2, 3, 5 számsorozat kell, hogy megjelenjen a képernyőn) **(0.75 pont)**
+    4. az 1, 1, 2, 1, 2, 3, 1, 2, 3, 4, . . . számsorozat első n elemét. (Például, n=5-re az 1, 1, 2, 1, 2 számsorozat kell, hogy megjelenjen a képernyőn) **(1 pont)**
 5. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely beolvas a billentyűzetről
     1. két egész számot (-999..999 tartományból) és kiírja ezeket csökkenő sorrendben a képernyőre; **(0.25 pont)**
     2. három egész számot (-999..999 tartományból) és kiírja ezeket növekvő sorrendben a képernyőre; **(0.5 pont)**
