@@ -49,5 +49,40 @@ használjunk saját függvényt két érték összehasonlítására! **(0,75 pon
 		- ismételjük a fenti eljárást, míg 1×1 méretű mátrixhoz nem jutunk!
 		- Írassuk ki a képernyőre a végső értéket! **(1 pont)**
 7. **(maximum 1 pont)** Egy kertész különböző színű virágokat rendelt, melyeket egy n×m (1≤n≤999, 1≤m≤999) méretű, mátrix alakú kertbe szeretne soronként elültetni. Írjunk Pascal vagy C/C++ programot, amely a billentyűzetről beolvassa az n és m értékét, valamint egy számsorozatot, amely a virágok színét kódolja érkezési sorrendjük szerint. A színkódok a 1..16 intervallumba esnek. A számsor végét egy nulla érték jelzi.
-	1. A program döntse el, hogy megfelel􀄘 számú virág érkezett-e a teljes kert beültetéséhez! **(0,75 pont)**
+	1. A program döntse el, hogy megfelelő számú virág érkezett-e a teljes kert beültetéséhez! **(0,75 pont)**
 	2. A program írja ki a képernyőre, hogy a kert melyik oszlopában lesz a legtöbb egyszínű virág! Ha több megoldás van, akkor az elsőt kell kiírni! **(1 pont)**
+---
+# Javítókulcs
+## Elmélet
+##### Változó **(0,75 pont)**
+- definíció (cím/hely, név/azonosító, típus, érték)
+- életciklus, érvényességi kör (lokális, globális)
+- helyfoglalás (mikor, hol)
+- kezdőérték
+##### Típus **(0,75 p)**
+- definíció (értékkészlet, műveletek)
+- osztályozás (elemi/primitív, összetett, felhasználói)
+##### Változó beolvasása és kiíratása **(0,5 p)**
+## Gyakorlat
+1. feladat
+	1. 320 **(0,75 p)**
+	2. egy helyes példa, például 857 **(1 p)**
+2. feladat
+	1. mindhárom eset kezelése (kisebb, nagyobb, egyenlő) **(0,5 p)**
+	2. algoritmus helyessége **(0,5 p)**; függvény **(0,25 p)**
+	3. algoritmus helyessége **(0,5 p)**; számsorozat eltárolása nélkül **(0,5 p)**
+3. feladat
+	1. változók helyes definiálása és inicializálása **(0,1 p)**; ciklus helyes használata **(0,1 p)**; változók beolvasása **(0,1 p)**; helyes algoritmus **(0,45 p)**
+	2. változók helyes definiálása és inicializálása **(0,1 p)**; ciklusok helyes használata **(0,2 p)**; változók beolvasása **(0,1 p)**; helyes algoritmus **(0,6 p)**
+4. feladat
+	1. triviális **(0,5 p)**
+	2. a számsorozat generálása **(0,75 p)**; csak az első n elem kiírása **(0,25 p)**
+5. feladat
+	1. beolvasás **(0,25 p)**; megszámlálás **(0,25 p)**
+	2. beolvasás (0,25 p); kiírás fordított sorrendben **(0,25 p)**; relatív prím teszt **(0,5 p)**
+6. feladat
+	1. beolvasás **(0,25 p)**; kiírás **(0,25 p)**
+	2. beolvasás **(0,2 p)**; algoritmus **(0,7 p)**; kiírás **(0,1 p)**
+7. feladat
+	1. méret beolvasás **(0,2 p)**; beolvasás végjelig **(0,25 p)**; egyenlőség vizsgálat **(0,3 p)**
+	2. méret beolvasás **(0,1 p)**; beolvasás végjelig **(0,25 p)**; tömb inicializálása **(0,1 p)**; gyakoriság és maximum számlálás **(0,4 p)**; kiírás **(0,15 p)**
