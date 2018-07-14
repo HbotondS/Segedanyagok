@@ -25,7 +25,7 @@
 └■
  kiír n;
 ````
-2. Legyen az alábbi pszeudokód program (a beolvasott érték természetes szám; a „/” operátor osztási hányadost, a „%”operátor pedig osztási maradékot ad meg):
+2. Legyen az alábbi pszeudokód program (a beolvasott érték természetes szám; a „/” operátor osztási hányadost, a „%”operátor pedig osztási maradékot ad meg). Mit ír ki a program, ha a beolvasott érték 2016?
 ````
  beolvas a
  k1 = 0
@@ -40,14 +40,13 @@
 └■
 kiír k1, ”,”, k2
 ````
-Mit ír ki a program, ha a beolvasott érték 2016?
 3. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre a számjegyei átlagát.
 4. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre a szám legkisebb és legnagyobb számjegyeit.
 5.  Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot
 (0..1010 tartományból), és kiír a képernyőre egy számjegy-előfordulási statisztikát.
 
 ##### 2. Számsorozatok feldolgozása elemenként. Egydimenziós tömbök.
-1. Legyen az alábbi pszeudokód programrészlet (az x[1..n+1] (n≥1) tömb 1..n szakasza egy növekvő sorrendbe rendezett természetes számsorozatot tárol, az n változó pedig ennek hosszát):
+1. Legyen az alábbi pszeudokód programrészlet (az x[1..n+1] (n≥1) tömb 1..n szakasza egy növekvő sorrendbe rendezett természetes számsorozatot tárol, az n változó pedig ennek hosszát). Mit ír ki a program, ha n=5, a számsorozat elemei 13, 17, 23, 23, 53, a beolvasott érték pedig 15? Mit valósít meg a programrészlet (fogalmazd meg tömören)?
 ````
  beolvas a
  i = n
@@ -60,7 +59,6 @@ Mit ír ki a program, ha a beolvasott érték 2016?
 │  kiír x[i], ”,”
 └■
 ````
-Mit ír ki a program, ha n=5, a számsorozat elemei 13, 17, 23, 23, 53, a beolvasott érték pedig 15? Mit valósít meg a programrészlet (fogalmazd meg tömören)?
 2. Írj **Pascal** vagy **C/C++** programot, amely természetes számokat (0..999 tartományból) olvas be a billentyűzetről 0 végjelig, és kiírja a képernyőre ezek szorzatát.
 3. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy n (1≤n≤999) értéket, és kiírja a képernyőre az alábbi sorozat első n darab elemét: 1, 2, 2, 3, 3, 3, 4, 4, 4, 4 ...
 4. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy n (1≤n≤999) értéket és egy n elemű egész számokat (-999..999 tartományból) tartalmazó számsorozatot, és kiírja a képernyőre azt, hogy a számsorozat hány elemére igaz, hogy egyenlő a szomszédjai számtani közepével.
@@ -94,7 +92,7 @@ Mit ír ki a program, ha n=5, a számsorozat elemei 13, 17, 23, 23, 53, a beolva
  5. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja egy kimeneti állományba, hogy hány sor tartalmaz szigorúan növekvő sorrendbe rendezett elemeket.
  
 ##### 4. Egymásba ágyazott ciklusszerkezetek használatát feltételező algoritmusok.
-1. Legyen az alábbi pszeudokód programrészlet (a beolvasott értékek természetes számok; a „/” operátor osztási hányadost, a „%”operátor pedig osztási maradékot ad meg):
+1. Legyen az alábbi pszeudokód programrészlet (a beolvasott értékek természetes számok; a „/” operátor osztási hányadost, a „%”operátor pedig osztási maradékot ad meg). Mit ír ki a program, ha n-be az 5 értéket, majd az x változóba sorra az 139, 999, 89, 6, 11értékeket olvassuk be?
 ````
  beolvas n
 ┌minden i = 1,n végezd
@@ -110,8 +108,6 @@ Mit ír ki a program, ha n=5, a számsorozat elemei 13, 17, 23, 23, 53, a beolva
 │  kiír x, ”,”
 └■
 ````
-Mit ír ki a program, ha n-be az 5 értéket, majd az x változóba sorra az 139, 999, 89, 6, 11
-értékeket olvassuk be?
 2. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy n (1≤n≤999) értéket és egy n elemű természetes számokat (0..1010 tartományból) tartalmazó számsorozatot, és kiírja egy kimeneti állományba, minden szám első számjegyét.
 3. Írj **Pascal** vagy **C/C++** programot, amely természetes számokat (0..1010 tartományból) olvas be a billentyűzetről 0 végjelig, és kiírja a képernyőre a számonkénti legkisebb számjegyek összegét.
 4. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy n (1≤n≤999) értéket és egy n elemű természetes számokat (0..1010 tartományból) tartalmazó számsorozatot, és kiírja a képernyőre, hogy hány számra igaz, hogy prím és a tükörszáma is prím.
