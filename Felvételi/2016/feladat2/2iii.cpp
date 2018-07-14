@@ -2,39 +2,21 @@
 
 using namespace std;
 
-int min(int a, int b) {
-	return (a < b) ? a : b;
-}
-
-void sort(int& a, int& b, int& c) {
-	if(a>b){
-        int tmp = a;
-        a = b;
-        b = tmp;
-    }
-    if(a>c){
-        int tmp = a;
-        a=c;
-        c = tmp;
-    }
-    if(b>c){
-        int tmp = b;
-        b=c;
-        c=tmp;
-    }
-}
-
 int main() {
+	// a, b, c - a legkisebb harom szam
+	// d - az aktualisan beolvasott szam
+	// n - sorozat hossza
 	int a, b, c, d, n;
-	a = b = c = 0;
 	cin >> n;
 	cin >> a;
 	cin >> b;
+	// elso ket elem rendzese, ha szukseges
 	if (b < a) {
 		int tmp = a;
 		a = b;
 		b = tmp;
 	}
+	// elso harom elem rendzese, ha szukseges
 	cin >> c;
 	if (c < b) {
 		if (c < a) {
@@ -49,6 +31,9 @@ int main() {
 			c = tmp;
 		}
 	}
+	// az aktualis elemet beolvassuk es megnezzuk,
+	// hogy be kell-e tenni a "sorba"
+	// ha igen a tobbi elemet arrab toljuk
 	for(int i = 3; i < n; ++i) {
 		cin >> d;
 		if (d < c) {
