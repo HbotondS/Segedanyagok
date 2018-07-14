@@ -17,7 +17,7 @@
 ### Példák **gyakorlati** feladatokra a fentebb megadott tematikából (fejezetenként):
 
 ##### 1. Természetes számok feldolgozása számjegyenként.
- 1. Mit ír ki az alábbi pszeudokód program, ha a beolvasott érték (természetes szám) 20150328 (a „/” operátor osztási hányadost ad meg)? Mit valósít meg a program (fogalmazd meg tömören)?
+1. Mit ír ki az alábbi pszeudokód program, ha a beolvasott érték (természetes szám) 20150328 (a „/” operátor osztási hányadost ad meg)? Mit valósít meg a program (fogalmazd meg tömören)?
 ````
  beolvas n
 ┌amíg n > 9 végezd
@@ -40,10 +40,10 @@
 └■
 kiír k1, ”,”, k2
 ````
- Mit ír ki a program, ha a beolvasott érték 2016?
+Mit ír ki a program, ha a beolvasott érték 2016?
 3. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre a számjegyei átlagát.
-3. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre a szám legkisebb és legnagyobb számjegyeit.
-4.  Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot
+4. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre a szám legkisebb és legnagyobb számjegyeit.
+5.  Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot
 (0..1010 tartományból), és kiír a képernyőre egy számjegy-előfordulási statisztikát.
 
 ##### 2. Számsorozatok feldolgozása elemenként. Egydimenziós tömbök.
@@ -77,7 +77,7 @@ Mit ír ki a program, ha n=5, a számsorozat elemei 13, 17, 23, 23, 53, a beolva
 │  kiír s, ”,”
 └■
 ````
-2. Legyen az alábbi pszeudokód programrészlet (az y[1..n][1..n] (n≥1) tömb egy négyzetes mátrixot tárol, az n változó pedig ennek méretét):
+2. Legyen az alábbi pszeudokód programrészlet (az y[1..n][1..n] (n≥1) tömb egy négyzetes mátrixot tárol, az n változó pedig ennek méretét). Mit ír ki a program, ha n=4, a mátrix elemei pedig (soronkénti bontásban) 1,2,3,4; 9,9,9,9; 1,2,3,4; 1,2,3,4?
 ````
  j = n
 ┌amíg j > 0 végezd
@@ -89,10 +89,9 @@ Mit ír ki a program, ha n=5, a számsorozat elemei 13, 17, 23, 23, 53, a beolva
 │  j = i - 1
 └■
 ````
-Mit ír ki a program, ha n=4, a mátrix elemei pedig (soronkénti bontásban) 1,2,3,4; 9,9,9,9; 1,2,3,4; 1,2,3,4?
-3. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja a képernyőre a mátrixot, táblázatos alakban úgy, hogy minden páratlan sorszámú sor fordított sorrendben jelenjen meg.
-4. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) értékeket és egy nxn méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiír a képernyőre megfelelő üzeneteket aszerint, hogy a mátrix szimmetrikus-e a főátlóra nézve.
-5. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja egy kimeneti állományba, hogy hány sor tartalmaz szigorúan növekvő sorrendbe rendezett elemeket.
+ 3. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja a képernyőre a mátrixot, táblázatos alakban úgy, hogy minden páratlan sorszámú sor fordított sorrendben jelenjen meg.
+ 4. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) értékeket és egy nxn méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiír a képernyőre megfelelő üzeneteket aszerint, hogy a mátrix szimmetrikus-e a főátlóra nézve.
+ 5. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja egy kimeneti állományba, hogy hány sor tartalmaz szigorúan növekvő sorrendbe rendezett elemeket.
  
 ##### 4. Egymásba ágyazott ciklusszerkezetek használatát feltételező algoritmusok.
 1. Legyen az alábbi pszeudokód programrészlet (a beolvasott értékek természetes számok; a „/” operátor osztási hányadost, a „%”operátor pedig osztási maradékot ad meg):
