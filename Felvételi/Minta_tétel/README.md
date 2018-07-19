@@ -38,7 +38,7 @@
 │ └■
 │  a = a / 10
 └■
-kiír k1, ”,”, k2
+ kiír k1, ”,”, k2
 ````
 3. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre a számjegyei átlagát.
 4. Írj **Pascal** vagy **C/C++** programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre a szám legkisebb és legnagyobb számjegyeit.
@@ -80,7 +80,7 @@ kiír k1, ”,”, k2
  j = n
 ┌amíg j > 0 végezd
 │  i = n
-│ ┌ amíg i > 0 végezd
+│ ┌amíg i > 0 végezd
 │ │  kiír y[i][j], ”,”
 │ │  i = j - 1
 │ └■
@@ -163,24 +163,40 @@ kiír k1, ”,”, k2
 ````
 3. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely beolvas a billentyűzetről egy természetes számot (0..1010 tartományból), és kiírja a képernyőre
     1. a beolvasott számot, a 10-zel való osztási hányadosát, és a 10-zel való osztási maradékát; **(0.25 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat3/3i.cpp)
     2. a beolvasott szám utolsó számjegyét; **(0.5 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat3/3ii.cpp)
     3. a beolvasott szám első számjegyét. **(0.75 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat3/3iii.cpp)
     4. a beolvasott szám számjegy-előfordulási statisztikáját. **(1 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat3/3iv.cpp)
 4. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely beolvas a billentyűzetről egy n (1≤n≤999) értéket, és kiírja a képernyőre
     1. az 1, 2, 3, 4, . . ., n számsorozatot; **(0.25 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat4/4i.cpp)
     2. az n-1, n-2, . . ., 2, 1, 0 számsorozatot; **(0.5 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat4/4ii.cpp)
     3. az 0, 1, 1, 2, 3, 5, 8, . . .számsorozat első n elemét (a következő az előző kettő összege); (Például, n=6-ra a 0, 1, 1, 2, 3, 5 számsorozat kell, hogy megjelenjen a képernyőn) **(0.75 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat4/4iii.cpp)
     4. az 1, 1, 2, 1, 2, 3, 1, 2, 3, 4, . . . számsorozat első n elemét. (Például, n=5-re az 1, 1, 2, 1, 2 számsorozat kell, hogy megjelenjen a képernyőn) **(1 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat4/4iv.cpp)
 5. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely beolvas a billentyűzetről
     1. két egész számot (-999..999 tartományból) és kiírja ezeket csökkenő sorrendben a képernyőre; **(0.25 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat5/5i.cpp)
     2. három egész számot (-999..999 tartományból) és kiírja ezeket növekvő sorrendben a képernyőre; **(0.5 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat5/5ii.cpp)
     3. egy n (1≤n≤999) értéket, majd n darab egész számot (-999..999 tartományból), és kiírja a képernyőre a növekvő sorrendbe rendezett számsorozatot. **(1 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat5/5iii.cpp)
 6. **(maximum 1 pont)** Írj Pascal vagy C/C++ programot, amely
     1. billentyűzetről beolvas két egész számot (-999..999 tartományból) és kiírja a képernyőre a kisebbiket; **(0.25 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat6/6i.cpp)
     2. billentyűzetről beolvas három egész számot (-999..999 tartományból) és kiírja a képernyőre a legnagyobbikat; **(0.5 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat6/6ii.cpp)
     3. állományból beolvas egy n (1≤n≤999) értéket, majd n darab egész számot (-999..999 tartományból), és kiírja a képernyőre a legkisebb és legnagyobb értékek első előfordulási helyeinek sorszámát; **(0.75 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat6/6iii.cpp)
     4. állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja a képernyőre a páratlan sorszámú sorok elemeinek minimum értékét, a páros sorszámú sorok elemeinek pedig a maximum értékét. Adott sor minimumát/maximumát egy-egy függvénnyel határozd meg. **(1 pont)**
+    [(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat6/6iv.cpp)
 7. **(maximum 1 pont)** Képzelj el n várost, amelyeket az 1,2,…,n természetes számok azonosítanak (bármely két város között van közvetlen út). Egy bementi állományban adott az n (1≤n≤10) érték és egy nxn méretű természetes számokat (1..999 tartományból) tartalmazó mátrix. A mátrix (i,j) pozíciójú eleme azt ábrázolja, hogy mekkora a közvetlen távolság az i és j városok között. Írj Pascal vagy C/C++ programot, amely meghatározza (és kiírja a képernyőre) egy utazókereskedő útvonalának a hosszát, aki az alábbi algoritmus szerint járja be a városokat (minden várost pontosan egyszer érintve):
     - indul az 1-es városból
     - minden lépésben a kurrens városhoz legközelebbi, még meg nem látogatott városba megy
     - az utolsóként érintett városból visszatér (a közvetlen úton) az 1-es városba
+[(megoldás)](https://github.com/HbotondS/Segedanyagok/tree/master/Felv%C3%A9teli/Minta_t%C3%A9tel/minta/feladat7/7.cpp)
