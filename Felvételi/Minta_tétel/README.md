@@ -7,6 +7,7 @@
  5. [Iteratív alprogramok (eljárások/függvények).](#5-iteratív-alprogramok-eljárásokfüggvények)
  6. [Elemi algoritmusok, és ezek alkalmazásai: keresés (lineáris/bináris), rendezés, prím-teszt, lnko, lkkt, stb.](#6-elemi-algoritmusok-és-ezek-alkalmazásai)
  7. [További egyszerű algoritmusok.](#7-további-egyszerű-algoritmusok)
+ 8. [Minta tétel](#minta-tétel)
 ---
 ### Példák **elméleti** tételre a fentebb megadott tematikából:
  - ALPROGRAMOK (Pascal vagy C/C++): definíció/deklaráció; formális és aktuális/effektív paraméterek; érték/cím-szerinti paraméterátadás, stb. Adj példákat!
