@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1508498571 source:d:\egyetem\programming\graph\kormentes\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1510319971 source:d:\egyetem\programming\graph\elvago el\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+

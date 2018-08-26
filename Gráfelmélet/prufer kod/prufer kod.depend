@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1506060206 source:c:\diak\hegyi botond\prufer kod\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1506258305 source:d:\egyetem\programozás\gráfelmélet\prufer kod\main.c
+	<stdio.h>
+	<stdlib.h>
+

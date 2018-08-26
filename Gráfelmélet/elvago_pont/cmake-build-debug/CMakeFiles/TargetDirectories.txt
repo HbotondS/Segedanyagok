@@ -1,0 +1,3 @@
+D:/Egyetem/Programming/Graph/elvago_pont/cmake-build-debug/CMakeFiles/elvago_pont.dir
+D:/Egyetem/Programming/Graph/elvago_pont/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Egyetem/Programming/Graph/elvago_pont/cmake-build-debug/CMakeFiles/rebuild_cache.dir

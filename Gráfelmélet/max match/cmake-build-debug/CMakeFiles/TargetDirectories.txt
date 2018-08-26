@@ -1,0 +1,3 @@
+D:/Egyetem/Programming/Graph/max match/cmake-build-debug/CMakeFiles/max_match.dir
+D:/Egyetem/Programming/Graph/max match/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Egyetem/Programming/Graph/max match/cmake-build-debug/CMakeFiles/rebuild_cache.dir

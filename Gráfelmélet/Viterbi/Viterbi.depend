@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1510313378 source:d:\egyetem\programming\graph\viterbi\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+
