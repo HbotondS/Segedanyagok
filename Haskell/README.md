@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/language-Haskell-blue.svg)
+
 ## Kapcsolodó tantárgy: Logikai és funkcionális programozás
 A **Compiler**-t [ide kattintva](https://www.haskell.org/downloads) tudod letölteni.
 Telepítés után a compiler-t a command ablakban tudod elínditani **Windows**-on a `ghci` parancs segítségével.
