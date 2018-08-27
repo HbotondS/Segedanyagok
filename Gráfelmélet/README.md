@@ -8,3 +8,5 @@ Linuxon az alábbi paranccsal tudod futtani:
 g++ file_neve.c -o nev
 ./nev
 ```
+
+Amely mappában találsz egy *visual.txt* fájlt ott lehetőséged lesz vizuálisan ábrázolni a gráfot, [ennek az oldalnak](http://www.webgraphviz.com/) a segítségével
