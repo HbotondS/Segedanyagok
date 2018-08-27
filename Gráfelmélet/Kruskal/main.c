@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-///megkeresi a legkisebb sulyozott fat
+// megkeresi a legkisebb sulyozott fat
 
-typedef struct Node{
+typedef struct Node {
     int parent, child;
     float weight;
 }Node;
@@ -35,8 +35,8 @@ void add(int* t, int numberOfNode, int node1, int node2) {
 void Kruskal(Node* t, int numberOfEdge, int numberOfNode) {
 
     qsort( t, numberOfEdge, sizeof(Node), int_cmp );
-    ///printf("After sort.\n");
-    ///NodeOut(t, numberOfEdge);
+    // printf("After sort.\n");
+    // NodeOut(t, numberOfEdge);
 
     int* tree;
     int i;
@@ -44,9 +44,9 @@ void Kruskal(Node* t, int numberOfEdge, int numberOfNode) {
         printf("Allocation failed.\n");
         return 1;
     }
-    for(i = 1; i <= numberOfNode; ++i) { ///melyik csomopont melyik
-        tree[i] = i;                    ///kezdetben minden csomopont sajatmaval alkot egy fat
-    }                                  ///ezutan tesszuk be az eleket, ugy hogy ne legyen kor
+    for(i = 1; i <= numberOfNode; ++i) { // melyik csomopont melyik
+        tree[i] = i;                    // kezdetben minden csomopont sajatmagaval alkot egy fat
+    }                                  // ezutan tesszuk be az eleket, ugy hogy ne legyen kor
     int totalWeight = 0;
     for(i = 0; i < numberOfEdge; ++i) {
         int node1 = tree[ t[i].parent ];
@@ -62,8 +62,7 @@ void Kruskal(Node* t, int numberOfEdge, int numberOfNode) {
     free(tree);
 }
 
-int main()
-{
+int main() {
     FILE* in;
     if( !(in = fopen("kruskal.txt", "r")) ) {
         printf("The file doesn't exist.\n");
@@ -83,7 +82,7 @@ int main()
     }
     close(in);
 
-    ///NodeOut(array, numberOfEdge);
+    // NodeOut(array, numberOfEdge);
 
     Kruskal(array, numberOfEdge, numberOfNode);
 

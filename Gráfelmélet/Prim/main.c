@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-///megkeresi a legkisebb sulyozott fat
+// megkeresi a legkisebb sulyozott fat
 
 #define INFINITY INT_MAX
 #define WHITE 0
@@ -37,37 +37,18 @@ void NodeOut(Node* array, int numberOfNode) {
     }
 }
 
-void printWeight(double** t, int numberOfNode) {
-    int i, j;
-    for(i = 1; i <= numberOfNode; ++i) {
-        for(j = 1; j <= numberOfNode; ++j) {
-            if( ((int)ceil(t[i][j])) > 0) {
-                printf("%d %d: %.2lf\n", i, j, t[i][j]);
-            }
-        }
-    }
-}
-
 void printdist(Node* t, int numberOfNode) {
     int i;
-    ///printf("\n");
+    // printf("\n");
     for(i = 1; i <= numberOfNode; ++i) {
         printf("%d %d: %.1lf\n", t[i].parent, i, t[i].weight);
     }
 }
 
-void printInt(int* t, int numberOfNode) {
-    int i;
-    for(i = 1; i <= numberOfNode ; ++i) {
-        printf("%d %d\n", i, t[i]);
-    }
-    printf("\n");
-}
-
-void printParent(Node* t, int numberOfNode) {
+void printParent(Node* t, double** weight, int numberOfNode) {
     int i;
     for(i = 1; i <= numberOfNode; ++i) {
-        printf("%d %d\n", t[i].parent, i);
+        printf("%d %d %.2f\n", i, t[i].parent, weight[i][t[i].parent]);
     }
 }
 
@@ -77,8 +58,8 @@ void Prim(Node* nodes, double** weight, int numberOfNode) {
     int node_left = numberOfNode, i, neight, actualNode;
     while(node_left) {
         actualNode = getMinNode(nodes, numberOfNode);
-        ///printf("\n%d\n", actualNode);
-        ///printdist(nodes, numberOfNode); hogy lassam a valtozast part1
+        // printf("\n%d\n", actualNode);
+        // printdist(nodes, numberOfNode); hogy lassam a valtozast part1
         --node_left;
         for(i = 0; i < nodes[actualNode].degree; ++i) {
             neight = nodes[actualNode].neight[i];
@@ -88,8 +69,8 @@ void Prim(Node* nodes, double** weight, int numberOfNode) {
             }
         }
         nodes[actualNode].weight = 0;
-        ///printf("|\n\\/\n");
-        ///printdist(nodes, numberOfNode); hogy lassam a valtozast part2
+        // printf("|\n\\/\n");
+        // printdist(nodes, numberOfNode); hogy lassam a valtozast part2
         nodes[actualNode].color = BLACK;
     }
 }
@@ -103,8 +84,7 @@ double getTotalWeight(Node* t, int numberOfNode, double** weight) {
     return totalWeight;
 }
 
-int main()
-{
+int main() {
     FILE* in;
     if( !(in = fopen("prim.txt", "r")) ) {
         printf("The file doesn't exist.\n");
@@ -143,10 +123,10 @@ int main()
     }
     close(in);
 
-    ///NodeOut(array, numberOfNode);
-    ///printWeight(weight, numberOfNode);
+    // NodeOut(array, numberOfNode);
+    // printWeight(weight, numberOfNode);
     Prim(array, weight, numberOfNode);
-    printParent(array, numberOfNode);
+    printParent(array, weight, numberOfNode);
     printf("Total wight: %.1lf\n", getTotalWeight(array, numberOfNode, weight));
 
     for(i = 0; i < numberOfNode; ++i) {
