@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-///kormentes grafra mukodik, van benne negatic el is
-///legrovidebb ut problemaja
-///legrovidebb utat is kiir
+// kormentes grafra mukodik, van benne negatic el is
+// legrovidebb ut problemaja
+// legrovidebb utat is kiir
 
 #define WHITE 0
 #define GREY 1
@@ -113,8 +113,7 @@ void printRouteMain(Node* t, int numberOfNode) {
     }
 }
 
-int main()
-{
+int main() {
     FILE* f;
     if( !(f = fopen("in.txt", "r")) ) {
         printf("The file doesn't exist.\n");
@@ -153,9 +152,9 @@ int main()
         fscanf(f, "%lf", &weight[node1][node2]);
     }
     close(f);
-    ///weightOut(weight, numberOfNode);
+    // weightOut(weight, numberOfNode);
     Dijkstra(t, weight, numberOfNode, 1);
-    ///distanceOut(t, numberOfNode);
+    // distanceOut(t, numberOfNode);
     printRouteMain(t, numberOfNode);
 
     for(i = 0; i < numberOfNode; ++i) {

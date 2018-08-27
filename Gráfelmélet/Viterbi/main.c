@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-///kormentes grafra mukodik, amiben nincs negativ el!!!
-///legrovidebbb ut problemaja
-///ki is kell iratni a legrovidebb utakat
+// kormentes grafra mukodik, amiben nincs negativ el!!!
+// legrovidebbb ut problemaja
+// ki is kell iratni a legrovidebb utakat
 
 #define WHITE 0
 #define GREY 1
 #define BLACK 2
 
-typedef struct Node{
+typedef struct Node {
     int degree;
     int* neight;
     int color;
-    float distance;
+    float distance; // mennyi s tavolsaga a kezdo ponttol
     int parent;
 }Node;
 
-typedef struct TOPO{
+typedef struct TOPO {
     int* t;
     int degree;
 }TOPO;
@@ -91,7 +91,7 @@ void depth(Node* t, double** weight, int actualNode, TOPO* topo) {
     for(i = 0; i < t[actualNode].degree; ++i) {
         neight = t[actualNode].neight[i];
         if((t[actualNode].distance + weight[actualNode][neight]) < t[neight].distance) {
-            ///printf("%0.1f < %f.1\n", (t[actualNode].distance + weight[actualNode][neight]), t[neight].distance);
+            // printf("%0.1f < %f.1\n", (t[actualNode].distance + weight[actualNode][neight]), t[neight].distance);
             t[neight].distance = t[actualNode].distance + weight[actualNode][neight];
             t[neight].parent = actualNode;
         }
@@ -115,8 +115,7 @@ void DFS(Node* t, double** weight, int numberOfNode, TOPO* topo) {
     }
 }
 
-int main()
-{
+int main() {
     FILE* f;
     if( !(f = fopen("in.txt", "r")) ) {
         printf("The file doesn't exist.\n");
@@ -162,13 +161,13 @@ int main()
         return 1;
     }
     topo->degree = 0;
-    ///nodeOut(t, numberOfNode);
-    ///weightOut(weight, numberOfNode);
+    // nodeOut(t, numberOfNode);
+    // weightOut(weight, numberOfNode);
     DFS(t, weight, numberOfNode, topo);
-    ///printTopo(topo, numberOfNode);
-    ///distanceOut(t, numberOfNode);
+    // printTopo(topo, numberOfNode);
+    // distanceOut(t, numberOfNode);
     printRouteMain(t, numberOfNode);
-    ///parentOut(t, numberOfNode);
+    // parentOut(t, numberOfNode);
 
     for(i = 0; i < numberOfNode; ++i) {
         free(weight[i]);
