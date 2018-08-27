@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-///elvago pontok
+// elvago pontok
 
 #define WHITE 0
 #define GREY 1
 #define BLACK 2
 #define INF INT_MAX
 
-typedef struct Node{
+typedef struct Node {
     int degree;
     int* neight;
     int color;
@@ -35,21 +35,21 @@ int elvagoPont(Node* t, int numberOfNode, int actualNode,  int actualLevel) {
     int lost_child = 0, childs = 0;
     for (int i = 0; i < t[actualNode].degree; ++i) {
         int neight = t[actualNode].neight[i];
-        if(t[neight].color == WHITE) { ///i utodja az actualNode-nak
+        if(t[neight].color == WHITE) { // i utodja az actualNode-nak
             ++childs;
             t[neight].parent = actualNode;
             int UminVM = elvagoPont(t, numberOfNode, neight, actualLevel+1);
-            if(UminVM < actualLevel) { ///az actualNode-nak i gyokeru fiu-reszfajanak
-                if(UminVM < RFminVM) {///viszamutato ele(ha egyaltalan letezik) v-re
-                    RFminVM = UminVM;///nezve is visszamutato
+            if(UminVM < actualLevel) { // az actualNode-nak i gyokeru fiu-reszfajanak
+                if(UminVM < RFminVM) { // viszamutato ele(ha egyaltalan letezik) v-re
+                    RFminVM = UminVM; // nezve is visszamutato
                 }
             }
-            else { ///nincs visszamutato el => i fiu-reszfa elszakad az actualNode-tol
+            else { // nincs visszamutato el => i fiu-reszfa elszakad az actualNode-tol
                 ++lost_child;
             }
         }
         else {
-            if(t[neight].color == GREY) { ///i "ose" az actualNode-nak
+            if(t[neight].color == GREY) { // i "ose" az actualNode-nak
                 if(t[neight].level < actualLevel - 1) {
                     if(t[neight].level < RFminVM) {
                         RFminVM = t[neight].level;
@@ -114,10 +114,10 @@ int main() {
         t[node2].neight[ t[node2].degree++ ] = node1;
     }
     fclose(f);
-    //nodeOut(t, numberOfNode);
+    // nodeOut(t, numberOfNode);
     elvagoPont(t, numberOfNode, 1, 0);
-    //cutOffNode(t, numberOfNode, 1, 0);
-    //printLevel(t, numberOfNode);
+    // cutOffNode(t, numberOfNode, 1, 0);
+    // printLevel(t, numberOfNode);
     free(t);
     return 0;
 }
