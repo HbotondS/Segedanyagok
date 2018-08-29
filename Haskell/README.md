@@ -24,3 +24,12 @@ Kilépés a compilerből:
 ## Én előre szóltam...
 A feladatokat nemsokkal a vizsga előtti napon oldottam meg, szóval kisebb-nagyobb hibák előfordulhatnak, vagy esetleg hogy nincs meg egy-egy feladat.<br />
 Igyekszem majd idővel javítani és bővíteni és szívesen fogadok bármi féle észrevételt. :smiley:
+
+## Néhány példa
+1. Határozzuk meg egy alap<sup>0</sup>, alap<sup>1</sup>...alap<sup>10</sup> (a kitevő változik, az alap állandó)
+
+```
+fugv :: (Integral a) => a -> [a]
+fugv alap = map ((\x x n -> x ^ n) alap) [0..10]
+```
+Az **x** paraméter megkapja az **alap** értékét és az **n** paraméter pedig megkapja rendre a lista elemienek értékét.
