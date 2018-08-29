@@ -27,9 +27,14 @@ Igyekszem majd idővel javítani és bővíteni és szívesen fogadok bármi fé
 
 ## Néhány példa
 1. Határozzuk meg egy alap<sup>0</sup>, alap<sup>1</sup>...alap<sup>10</sup> (a kitevő változik, az alap állandó)
-
 ```
 fugv :: (Integral a) => a -> [a]
-fugv alap = map ((\x x n -> x ^ n) alap) [0..10]
+fugv alap = map ((\x n -> x ^ n) alap) [0..10]
 ```
 Az **x** paraméter megkapja az **alap** értékét és az **n** paraméter pedig megkapja rendre a lista elemienek értékét.
+
+2. Határozzuk meg 0<sup>kit</sup>, 1<sup>kit</sup>...10<sup>kit</sup> (a kitevő állandó, az alap változik)
+```
+fugv :: (Integral a) => a -> [a]
+fugv kit = map ((\n x -> x ^ n) kit) [0..10]
+```
