@@ -52,3 +52,12 @@ hatv x n
     | otherwise = x * temp * temp
     where
         temp = hatv x (div n 2)
+        
+-- listabol mi oszthato a parameterrel
+oszthato :: (Integral a) => a -> a -> Bool
+oszthato x y
+    | mod y x == 0 = True
+    | otherwise = False
+    
+oszthatok :: (Integral a) => a -> [a] -> [a]
+oszthatok x ls = filter (oszthato x) ls
