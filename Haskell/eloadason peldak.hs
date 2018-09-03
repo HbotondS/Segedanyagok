@@ -126,7 +126,7 @@ tavolsag (x1, y1, szin1) (x2, y2, szin2) =
       dx = x2 - x1
       dy = y2 - y1
 
--- head & tail & init & last & sum fuggveny a konyvtarfuggvenyek hasznalata nelkul
+-- head, tail, init, last, sum, reverse fuggveny a konyvtarfuggvenyek hasznalata nelkul
 my_head [] = error "ures lista"
 my_head (k: ve) = k
 
@@ -146,3 +146,11 @@ my_sum1 (k: ve) = k + my_sum1 ve
 
 my_sum2 [] = 0
 my_sum2 ls = head ls + my_sum2 (tail ls)
+
+my_reverse :: [a] -> [a]
+my_reverse [] = []
+my_reverse (k: ve) = my_reverse ve ++ [k]
+
+-- paros osztok listaja
+parosOsztok :: (Integral a) => a -> (a, [a])
+parosOsztok n = (n, [i | i <- [2, 4.. (div n 2 + 1)], mod n i == 0])
