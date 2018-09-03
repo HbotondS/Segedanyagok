@@ -32,6 +32,7 @@ Kilépés a compilerből:
 :quit
 ```
 <br>
+
 #### A $ szimbólum hasznlálata
 A függvény kiértékelési sorrendjét tudjuk vele változtatni. Fölössegessé válik a zárójelezés: hamarabb kiértékelődik a $ két oldalán levő kifejezés, jobbról asszociatív (azaz előbb a jobboldalon levő kifejezés értékelődik ki). Példa:
 ```
