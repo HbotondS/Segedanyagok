@@ -17,6 +17,14 @@ Függvények és változók típusdefiníciói:
 ```
 :t variable/function
 ```
+Aktuális munkakönyvtár lekérdezése:
+```
+:!cd
+```
+Munkakönyvtár változtatása:
+```
+:cd C:\Diak
+```
 Kilépés a compilerből:
 ```
 :quit
