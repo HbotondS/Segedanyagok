@@ -154,3 +154,13 @@ my_reverse (k: ve) = my_reverse ve ++ [k]
 -- paros osztok listaja
 parosOsztok :: (Integral a) => a -> (a, [a])
 parosOsztok n = (n, [i | i <- [2, 4.. (div n 2 + 1)], mod n i == 0])
+
+-- adott elem beszurasa a listaba
+ins x [] = [x]
+ins x (k: ve)
+  | x > k = (k: ins x ve)
+  | otherwise = (x: k: ve)
+
+-- beszurasos rendezes
+insertS [] = []
+insertS (k: ve) = ins k (insertS ve)
