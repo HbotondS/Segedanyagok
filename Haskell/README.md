@@ -3,8 +3,10 @@
 ## Kapcsolodó tantárgy: Logikai és funkcionális programozás
 A **Compiler**-t [ide kattintva](https://www.haskell.org/downloads) tudod letölteni.
 Telepítés után a compiler-t a command ablakban tudod elínditani **Windows**-on a `ghci` parancs segítségével.
-## Hasznosabb parancsok a fordításhoz
-**Fotos**, ha be szeretnél tölteni egy fájlt akkor elöször a command ablakban be kell lépj abba a mappába ahol a fájl található. Máskülönben direkt elérési útvonalat kell megadni.<br />
+## Hasznosabb parancsok
+**Fotos**, ha be szeretnél tölteni egy fájlt akkor elöször a command ablakban be kell lépj abba a mappába ahol a fájl található. Máskülönben direkt elérési útvonalat kell megadni.
+<br />
+
 Fájl betöltése:
 ```
 :l filename
@@ -29,6 +31,29 @@ Kilépés a compilerből:
 ```
 :quit
 ```
+<br>
+#### A $ szimbólum hasznlálata
+A függvény kiértékelési sorrendjét tudjuk vele változtatni. Fölössegessé válik a zárójelezés: hamarabb kiértékelődik a $ két oldalán levő kifejezés, jobbról asszociatív (azaz előbb a jobboldalon levő kifejezés értékelődik ki). Példa:
+```
+> sqrt (2 + 3 + 5)
+3.1622776601683795
+
+> sqrt $ 2 + 3 + 5
+3.1622776601683795
+```
+
+Összeadja a számokat, alkalmazza az **abs** függvényt, majd meghatározza a négyzetgyököt:
+```
+> sqrt $ abs $ (-16) + 9
+2.6457513110645907
+```
+Alkalmazza az abs függvényt, hozzáadja a 9-et, majd meghatározza a
+négyzetgyököt:
+```
+> sqrt $ abs (-16) + 9
+5.0
+```
+
 ## Én előre szóltam...
 A feladatokat nemsokkal a vizsga előtti napon oldottam meg, szóval kisebb-nagyobb hibák előfordulhatnak, vagy esetleg hogy nincs meg egy-egy feladat.<br />
 Igyekszem majd idővel javítani és bővíteni és szívesen fogadok bármi féle észrevételt. :smiley:
