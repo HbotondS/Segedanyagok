@@ -12,7 +12,7 @@ sDigit p nr
 ```
 
 2. Mit csinál az alábbi függvény, ha a függvény paramétere 5? Adjuk meg a függvény típusdefinícióját, egy kezdeti kifejezést és a kiértékelés eredményét.
-    1. A. [1, 0, 1, 0, 1]
+    1. [1, 0, 1, 0, 1]
     2. [True,False,True,False,True]
     3. [True,True,False,False,True]
     4. Komplilálási hiba
@@ -72,7 +72,8 @@ Példa:
 12.5, 21
 ```
 
-7. Alkalmazva a következő felhasználó által definiált típust, írjunk függvényt, amely meghatározza az adott márkájú telefonok számát:
+7. Alkalmazva a következő felhasználó által definiált típust, írjunk függvényt, amely meghatározza az adott márkájú telefonok számát. <br>
+A függvény szignatúrája legyen a következő: `szamol :: [Char] -> [Telef] -> Int`
 
 ``` haskell
 data Telef = Telef{
@@ -81,4 +82,3 @@ data Telef = Telef{
   kod :: Int
 }deriving (Show)
 ```
-A függvény szignatúrája legyen a következő: `szamol :: [Char] -> [Telef] -> Int`
