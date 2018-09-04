@@ -7,31 +7,18 @@ Telepítés után a compiler-t a command ablakban tudod elínditani **Windows**-
 **Fotos**, ha be szeretnél tölteni egy fájlt akkor elöször a command ablakban be kell lépj abba a mappába ahol a fájl található. Máskülönben direkt elérési útvonalat kell megadni.
 <br />
 
-Fájl betöltése:
-```
-:l filename
-```
-Fájl újratöltése:
-```
-:r filename
-```
-Függvények és változók típusdefiníciói:
-```
-:t variable/function
-```
-Aktuális munkakönyvtár lekérdezése:
-```
-:!cd
-```
-Munkakönyvtár változtatása:
-```
-:cd C:\Diak
-```
-Kilépés a compilerből:
-```
-:quit
-```
-<br>
+- Fájl betöltése:
+  `:l filename`
+- Fájl újratöltése:
+  `:r filename`
+- Függvények és változók típusdefiníciói:
+  `:t variable/function`
+- Aktuális munkakönyvtár lekérdezése:
+  `:!cd`
+- Munkakönyvtár változtatása:
+  `:cd C:\Diak`
+- Kilépés a compilerből:
+  `:quit`
 
 #### A $ szimbólum hasznlálata
 A függvény kiértékelési sorrendjét tudjuk vele változtatni. Fölössegessé válik a zárójelezés: hamarabb kiértékelődik a $ két oldalán levő kifejezés, jobbról asszociatív (azaz előbb a jobboldalon levő kifejezés értékelődik ki). Példa:
@@ -81,7 +68,7 @@ Hasonlóan működik a **foldr** is, csak az jobbról ballra halad és a kezdő�
 
 
 ## Én előre szóltam...
-A feladatokat nemsokkal a vizsga előtti napon oldottam meg, szóval kisebb-nagyobb hibák előfordulhatnak, vagy esetleg hogy nincs meg egy-egy feladat.<br />
+A feladatokat nemsokkal a vizsga előtti napokban oldottam meg, szóval kisebb-nagyobb hibák előfordulhatnak, vagy esetleg hogy nincs meg egy-egy feladat.<br />
 Igyekszem majd idővel javítani és bővíteni és szívesen fogadok bármi féle észrevételt. :smiley:
 
 ## Néhány példa
