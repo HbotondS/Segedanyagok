@@ -1,4 +1,5 @@
 import System.IO
+import Data.Char
 
 helloWorld :: IO()
 helloWorld = do
@@ -71,3 +72,45 @@ fileOlvasSeged inf = do
     temp <- hGetLine inf
     putStrLn temp
     fileOlvasSeged inf
+
+-- nagybetusitsuk az input.txt tartalmat es tegyuk az eredmenyt az output.txt-be
+nagyBetusit1 :: IO()
+nagyBetusit1 = do
+  inf <- readFile "input.txt"
+  writeFile "output.txt" $ map toUpper inf
+
+nagyBetusit2 :: IO()
+nagyBetusit2 = do
+  inf <- openFile "input.txt" ReadMode
+  outf <- openFile "output.txt" WriteMode
+  feldolgoz inf outf
+  hClose inf
+  hClose outf
+
+feldolgoz :: Handle -> Handle -> IO()
+feldolgoz inf outf = do
+  feof <- hIsEOF inf
+  if feof then return()
+  else do
+    temp <- hGetLine inf
+    hPutStrLn outf $ map toUpper temp
+    feldolgoz inf outf
+
+-- hatarozzuk meg egy fajl meretet bajtban
+meret :: String -> IO()
+meret inf = do
+  inf_ <- openBinaryFile inf ReadMode
+  size <- hFileSize inf_
+  putStr "file size: "
+  putStrLn $ show $ fromIntegral size
+  hClose inf_
+
+-- keszitsunk masolatot egy allomanyrol
+masol :: IO()
+masol = do
+  inf <- openBinaryFile "input.txt" ReadMode
+  outf <- openBinaryFile "input2.txt" WriteMode
+  blista <- hGetContents inf
+  hPutStr outf blista
+  hClose inf
+  hClose outf
