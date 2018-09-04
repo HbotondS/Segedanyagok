@@ -1,3 +1,5 @@
+import System.IO
+
 helloWorld :: IO()
 helloWorld = do
   putStrLn "Hello World!"
@@ -42,3 +44,30 @@ olvasNSzam n = do
   else do
     ve <- olvasNSzam $ n-1
     return (k: ve)
+
+fileKiir :: String -> [Integer] -> IO()
+fileKiir outf ls = do
+  outf_ <- openFile outf WriteMode
+  fileKiirSeged outf_ ls
+  hClose outf_
+
+fileKiirSeged :: Handle -> [Integer] -> IO()
+fileKiirSeged outf [] = return ()
+fileKiirSeged outf (k: ve) = do
+  hPutStr outf $ (show k) ++ " "
+  fileKiirSeged outf ve
+
+fileOlvas :: String -> IO()
+fileOlvas inf = do
+  inf_ <- openFile inf ReadMode
+  fileOlvasSeged inf_
+  hClose inf_
+
+fileOlvasSeged :: Handle -> IO()
+fileOlvasSeged inf = do
+  heof <- hIsEOF inf
+  if heof then return()
+  else do
+    temp <- hGetLine inf
+    putStrLn temp
+    fileOlvasSeged inf
