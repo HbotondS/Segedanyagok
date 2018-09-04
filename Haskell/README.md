@@ -68,6 +68,16 @@ A megadott indexérték alapján a bemeneti listát két listára osztja. Az ere
 > splitAt 4 [1,2,3,4,5,6,7,8,9]
 ([1,2,3,4],[5,6,7,8,9])
 ```
+#### foldl
+Alkalmazza a bináris operátort egy kezdeti értéken és a listaelemeken. A listaelemeket balról jobbra dolgozza fel, a kezdőértéket pedig az első rekurzív híváskor. Ha kíváncsi vagy, hogy hogyan működik a függvény [ide kattintva](./konyvtari-fuggvenyek-impl/my_foldl.hs) megnézheted.<br>
+Hasonlóan működik a **foldr** is, csak az jobbról ballra halad és a kezdőértéket pedig az utolsó rekurzív híváskor használja fel. Működését ennek is megnézheted [ide kattintva](./konyvtari-fuggvenyek-impl/my_foldr.hs)
+``` haskell
+> foldl (+) 0 [1..10]
+55
+
+> foldr max 1 [34,6,12,65,8,11,23]
+65
+```
 
 
 ## Én előre szóltam...
