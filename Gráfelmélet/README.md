@@ -8,5 +8,6 @@ Linuxon az alábbi paranccsal tudod futtani:
 g++ file_neve.c -o nev
 ./nev
 ```
+A fent látható módon Windows-in is tudod kompilálni és futtatni a fájlokat, abban az esetben ha telepítva van a MinGW kompiler, [innen tudod letőlteni](https://osdn.net/projects/mingw/releases/).
 
 Amely mappában találsz egy *visual.txt* fájlt ott lehetőséged lesz vizuálisan ábrázolni a gráfot, [ennek az oldalnak](http://www.webgraphviz.com/) a segítségével
