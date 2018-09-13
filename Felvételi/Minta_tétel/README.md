@@ -1,3 +1,4 @@
+<img src="../../sapientia_logo.jpg" width="105"/>
 # Felvételi Tematika - Informatika
 ## Fejezetek:
  1. [Természetes számok feldolgozása számjegyenként.](#1-természetes-számok-feldolgozása-számjegyenként)
@@ -91,7 +92,7 @@
  3. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja a képernyőre a mátrixot, táblázatos alakban úgy, hogy minden páratlan sorszámú sor fordított sorrendben jelenjen meg.
  4. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) értékeket és egy nxn méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiír a képernyőre megfelelő üzeneteket aszerint, hogy a mátrix szimmetrikus-e a főátlóra nézve.
  5. Írj **Pascal** vagy **C/C++** programot, amely állományból beolvassa az n (1≤n≤10) és m (1≤m≤10) értékeket és egy nxm méretű egész számokat (-999..999 tartományból) tartalmazó mátrixot, és kiírja egy kimeneti állományba, hogy hány sor tartalmaz szigorúan növekvő sorrendbe rendezett elemeket.
- 
+
 ##### 4. Egymásba ágyazott ciklusszerkezetek használatát feltételező algoritmusok.
 1. Legyen az alábbi pszeudokód programrészlet (a beolvasott értékek természetes számok; a „/” operátor osztási hányadost, a „%”operátor pedig osztási maradékot ad meg). Mit ír ki a program, ha n-be az 5 értéket, majd az x változóba sorra az 139, 999, 89, 6, 11értékeket olvassuk be?
 ````

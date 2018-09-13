@@ -1,3 +1,4 @@
+<img src="../sapientia_logo.jpg" width="105"/> <br>
 ![](https://img.shields.io/badge/language-C-blue.svg)
 
 ## Kapcsolodó tantárgy: Gráfalgoritmusok
