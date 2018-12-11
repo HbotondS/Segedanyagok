@@ -1,5 +1,7 @@
-<img src="../sapientia_logo.jpg" width="105"/> <br>
-![](https://img.shields.io/badge/language-C-blue.svg)
+<div>
+  <img src="../sapientia_logo.jpg" height=50/> 
+  <img src="https://github.com/konpa/devicon/blob/master/icons/c/c-original.svg" height=50/>
+</div>  
 
 ## Kapcsolodó tantárgy: Gráfalgoritmusok
 
