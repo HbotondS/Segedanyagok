@@ -8,6 +8,16 @@ Queue::Queue(int size, int maxSize):size(size), maxSize(maxSize) {
     elements = new double[maxSize];
 }
 
+Queue(const char* filename) {
+    ifstream ifs(filename);
+    int n = 0;
+    ifs >> n;
+    for (int i = 0; i < n; ++i) {
+        ifs >> elements[i];
+    }
+    size = n;
+}
+
 Queue::Queue(const Queue &that):size(that.size), maxSize(that.maxSize) {
     this->elements = new double[this->size];
     for (int i = 0; i < this->size; ++i) {
